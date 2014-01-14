@@ -6,7 +6,7 @@ FastFile is a PowerShell module for rapid write-only file access.  This module p
     > import-module FastFile
     > $path = ./tmp.txt
     > open-fastFile $path
-    > 0..999 | ${ls /} | out-fastFile $path
+    > 0..999 | %{ls /} | out-fastFile $path
     > close-fastFile $path
 
 or
@@ -14,7 +14,7 @@ or
     > import-module FastFile
     > $path = ./tmp.txt
     > use-fastFile $path {
-        0..999 | ${ls /} 
+        0..999 | %{ls /} 
       }
 
 ## Exported Functions
