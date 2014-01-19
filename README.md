@@ -1,6 +1,6 @@
 # fast-file
 
-FastFile is a PowerShell module for rapid write-only file access.  This module performs much faster than out-file for large data sets.
+FastFile is a PowerShell module for rapid write-only file access.  This module performs much faster than out-file for large data sets written across multiple pipelines.
 
 ## Quick Start
     > import-module FastFile
